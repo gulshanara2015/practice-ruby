@@ -1,6 +1,6 @@
-class Palin
+class Palindrome
 	
-	def leng		
+	def length
 		print "enter the num"
 		x=gets
 		y= x.length
@@ -9,17 +9,17 @@ class Palin
 		z=pal.new
 	end
 
-	def pal
+	def palindrome
 		
 		if 	x==x.reverse then
-		print"palin"
+		print "Palindrome it is!!"
 		else
-		print "not palin"	
+		print "Oops so sorry. Try again!"
 		end
 
 	end
 
 end
 
-a=Palin.new
-a.leng
+palindrome = Palindrome.new
+palindrome.length
