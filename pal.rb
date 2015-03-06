@@ -1,18 +1,15 @@
 class Pal
-def rev
-print"enter the number"
-abc=gets.chomp 
-x=abc.reverse
-print"#{x}"
-comp(abc,x)
-end
-def comp(abc,x)
+	def initialize
+		puts "Enter the number"
+		a = gets.chomp 
+		x = a.reverse
+		puts "reverse is #{x}"
+		comp(a, x)
+	end
 	
-if puts abc==x  then
-	print "same"
-end
-end
+	def comp(abc, x)	
+		puts abc == x ? "same" : "not same"
+	end
 end
 
-z=Pal.new
-z.rev
+z = Pal.new
